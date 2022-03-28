@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+<link rel="stylesheet" href="AdminLogInPage.css" >
+</head>
+<body> 
+    <h2>Admin Login Page</h2><br>
+    <div >    
+    <form method="post" >    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        
+       	<a th:href="@{index}">Log In</a>
+    </form>     
+</div> 
+		<a th:href="@{HomePage}">Home Page</a>
+</body>
+</html>
